@@ -89,16 +89,22 @@
         button{
             display: none;
                     }
+#prueba1{
+    display: none;
+        }
+#prueba:hover~#prueba1{
+    display: block;
+    cursor: pointer;
+}        
             
-            
-@media screen and (min-width:768px){
+@media all and (min-width:768px){
     #pic{
         height:200px;
         width: 275px;
-        display:initial;
+        display:block;
     }
 }
-@media screen and (min-width:1280px){
+@media all and (min-width:1280px){
     a{
         color: rgb(70, 187, 226);
     }
@@ -109,13 +115,13 @@
         display: block;
     }
     button{
-        display: initial;
+        display: block;
         color: #0099CC;
         background: transparent;
         border: 2px solid #0099CC;
         border-radius: 6px;
         width: 500px; 
-        float: left; 
+        float:inherit; 
     }
     button:hover {
         background-color: #008CBA;
